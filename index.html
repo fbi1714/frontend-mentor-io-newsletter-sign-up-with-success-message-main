@@ -21,6 +21,19 @@
    </picture>
    <div class="content">
 
+     <dialog>
+      <span></span>
+      <h1 class="title">Thanks for subscribing!</h1>
+      <p>A confirmation email has hen sent to. Please open It and click the button inside to confirm your subscription.</p>
+      <form method="dialog">
+        <button class="button">Dismiss message</button>
+      </form>
+     </dialog>
+     
+      <button
+       onclick="document.querySelector('dialog').showModal()"
+       class="button">Subscribe to monthly newsletter</button>
+
      <h1 class="title">Stay updated!</h1>
      <p>Join 60,000+ product manager receiving monthly updates on:</p>
      <ul role="list" class="checkmark-list">

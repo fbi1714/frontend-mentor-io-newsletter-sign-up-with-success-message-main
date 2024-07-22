@@ -216,3 +216,27 @@ form {
     display: grid;
     gap: 1.5rem;
 }
+
+dialog[open] {
+    translate: 0 0;
+}
+
+dialog {
+    transition: translate 0.7s ease-out, overlay 0.7s ease-out, display 0.7s ease-out allow-discrete;
+    translate: 0 100vh;
+    max-width: 400px;
+    border: none;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+dialog > span {
+    content: url(./assets/images/icon-success.svg);
+    scale: 0.65;
+}
+
+@starting-style {
+    dialog[open] {
+        translate: 0 100vh;
+    }
+}
