@@ -73,6 +73,36 @@ body {
     line-height: 1.5;
 }
 
+input {
+    padding: 1rem;
+    border-radius: .5rem;
+    font: inherit;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    border: 1px solid var(--clr-neutral-200);
+}
+
+input::placeholder {
+    color: var(--clr-neutral-200);
+}
+
+.form-group {
+    display: grid;
+    gap: .5rem;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+}
+
+.button {
+    background: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+    font: inherit;
+    font-weight: var(--fw-bold);
+    border: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
 .checkmark-list {
     display: grid;
     gap: .625rem;
@@ -88,7 +118,7 @@ body {
 }
 
 .newsletter-cta {
-
+    font: inherit;
 }
 
 .newsletter-cta > .content {
