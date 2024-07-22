@@ -73,6 +73,20 @@ body {
     line-height: 1.5;
 }
 
+.checkmark-list {
+    display: grid;
+    gap: .625rem;
+}
+
+.checkmark-list li {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+}
+
+.checkmark-list li::before {
+    content: url(./assets/images/icon-list.svg);
+}
+
 .newsletter-cta {
 
 }
