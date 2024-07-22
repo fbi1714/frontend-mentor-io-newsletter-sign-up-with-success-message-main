@@ -103,6 +103,27 @@ input::placeholder {
     border-radius: .5rem;
 }
 
+.button:hover,
+.button:focus-visible {
+    background: linear-gradient(
+        -90deg,
+        var(--clr-accent-400),
+        var(--clr-accent-500)
+    );
+}
+
+.button:hover::after,
+.button:focus-visible::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    border-radius: inherit;
+    translate: 0 1.5rem;
+    filter: blur(1rem);
+    opacity: .25;
+}
+
 .checkmark-list {
     display: grid;
     gap: .625rem;
@@ -130,4 +151,10 @@ input::placeholder {
 .newsletter-cta .title {
     font-size: var(--fs-900);
     font-weight: var(--fw-bold);
+}
+
+.newsletter-cta form {
+    margin-block-start: 1.25rem;
+    display: grid;
+    gap: 1.5rem;
 }
