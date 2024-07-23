@@ -29,10 +29,6 @@
         <button class="button">Dismiss message</button>
       </form>
      </dialog>
-     
-      <button
-       onclick="document.querySelector('dialog').showModal()"
-       class="button">Subscribe to monthly newsletter</button>
 
      <h1 class="title">Stay updated!</h1>
      <p>Join 60,000+ product manager receiving monthly updates on:</p>
@@ -41,16 +37,17 @@
       <li>Measuring to ensure updates are a success</li>
       <li>And much more!</li>
      </ul>
-     <form>
+     <form id="emailForm">
       <div class="form-group with-error-field">
         <label for="email">Email address</label>
-        <input placeholder="email@company.com" type="email" id="email" name="email" autocomplete="">
+        <input placeholder="email@company.com" type="email" id="email" name="email" autocomplete="" required >
         <span class="error">Email address required</span>
       </div>
-      <button class="button">Subscribe to monthly newsletter</button>
+      <button class="button" type="submit">Subscribe to monthly newsletter</button>
      </form>
    </div>
 
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

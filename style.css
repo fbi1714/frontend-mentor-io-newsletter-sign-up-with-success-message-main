@@ -114,7 +114,7 @@ input:focus-visible {
     display: none;
 }
 
-.form-group > :not(:focus):invalid + .error {
+.form-group:has(:not(:focus):invalid) > .error {
     display: block;
 }
 
@@ -222,8 +222,8 @@ dialog[open] {
 }
 
 dialog {
-    transition: translate 0.7s ease-out, overlay 0.7s ease-out, display 0.7s ease-out allow-discrete;
-    translate: 0 100vh;
+    transition: translate 0s ease-out, overlay 0s ease-out, display 0s ease-out allow-discrete;
+    /* translate: 0 100vh; */
     max-width: 400px;
     border: none;
     border-radius: 2rem;
