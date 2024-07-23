@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         
         if (emailPattern.test(emailValue)) {
+            document.getElementById('userEmail').textContent = emailValue
             document.querySelector('dialog').showModal();
             emailInput.value = '';
         } else {
