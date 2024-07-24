@@ -217,22 +217,22 @@ form {
     gap: 1.5rem;
 }
 
+dialog[open] {
+    translate: 0 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    gap: 1.5rem;
+}
+
 dialog {
-    width: 100%;
-    height: 100%;
     border: none;
     border-radius: 0;
-    padding: 3rem;
 }
 
 dialog > span {
     content: url(./assets/images/icon-success.svg);
     scale: 0.65;
-}
-
-dialog > form {
-    display: grid;
-    gap: 1.5rem;
 }
 
 #userEmail {
@@ -243,6 +243,8 @@ dialog > form {
     
     dialog[open] {
         translate: 0 0;
+        display: grid;
+        gap: 1.5rem;
     }
     
     dialog {
@@ -263,8 +265,6 @@ dialog > form {
     @starting-style {
         dialog[open] {
             translate: 0 100vh;
-            display: grid;
-            gap: 1.5rem;
         }
     }
     
