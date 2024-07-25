@@ -75,6 +75,7 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
+    height: 100%;
 }
 
 input {
@@ -194,6 +195,7 @@ form {
         grid-column: 1;
         grid-row: 1;
     }
+
 }
 
 .newsletter-cta > .content {
@@ -221,8 +223,6 @@ dialog[open] {
     translate: 0 0;
     max-width: 100%;
     max-height: 100%;
-    display: grid;
-    gap: 1.5rem;
 }
 
 dialog {
@@ -245,6 +245,8 @@ dialog > span {
         translate: 0 0;
         display: grid;
         gap: 1.5rem;
+        max-width: 400px;
+        max-height: 480px;
     }
     
     dialog {
